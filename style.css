@@ -1,0 +1,344 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.txtLogo  {
+    text-decoration: none;
+    font-size: 42px;
+}
+
+header {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #891D1D;
+}
+
+ul {
+    width: 80%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none; 
+}
+
+li {
+    width: 20%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.imgLogo {
+    width: 100px;
+    height: 100px;
+}
+
+.txtLogo {
+    color: #EC7000;
+}
+
+.boxBtnFloat {
+    background-color: #891D1D;
+    width: 180px;
+    height: 100px;
+    border-radius: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5px;
+}
+
+.boxBtnFloat a{
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.phone {
+    width: 30px;
+}
+
+.float {
+    right: 30px;
+    position: fixed;
+    height: 60px;
+    bottom: 30px;
+}
+
+#caixatexto{
+    background-color: #fff;
+    color: rgb(8, 8, 36);
+    position: fixed;
+    width: 130px;
+    bottom: 55px;
+    right: 83px;
+    font-size: 16px;
+    line-height: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #3b669e;
+    visibility: hidden;
+}
+
+section {
+    width: 100%;
+    height: 2400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f6fa;
+    flex-direction: column;
+}
+
+.boxEmpImg {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f5f6fa;
+    flex-direction: column;
+}
+
+.moneyImg {
+    width: 85%;
+    height: 100%;
+}
+
+.boxEmpTxt {
+    width: 70%;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f5f6fa;
+    flex-direction: column;
+}
+
+
+.boxEmpTxt h2 {
+    font-size: 40px;
+    color: #EC7000;
+}
+
+.boxEmpTxt h4 {
+    font-size: 32px;
+    color: #EC7000;
+}
+
+.boxEmpBtn {
+    width: 70%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    background-color: #f5f6fa;
+    flex-direction: column;
+    margin: 50px;
+}
+
+.boxEmpBtn2 {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    background-color: #f5f6fa;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.boxEmpBtn2 :hover {
+    background-color:#891D1D;
+    transition-duration: 1s;
+    color: #f5f6fa;
+    border: #f5f6fa 2px solid;
+}
+
+.boxEmpBtn3 {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    background-color: #f5f6fa;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.boxEmpBtn3 :hover {
+    background-color:#891D1D;
+    transition-duration: 1s;
+    color: #f5f6fa;
+    border: #f5f6fa 2px solid;
+}
+
+button {
+    width: 250px;
+    height: 80px;
+    color: #891D1D;
+    font-size: 25px;
+    border: #891D1D 2px solid;
+}
+
+
+
+.button {
+    width: 900px;
+    height: 80px;
+    color: #f5f6fa;
+    background-color: #891D1D;
+    font-size: 25px;
+    border-radius: 15px; 
+}
+
+
+
+/* =============== modal ============== */
+
+.modal_container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_container.mostrar{
+    display: flex;
+}
+
+.modal_conteudo {
+    background-color: #f5f6fa;
+    width: 60%;
+    min-width: 280px;
+    padding: 40px;
+    border: none;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.titulo_modal { 
+    color: #2d2d2d;
+    font-size: xx-large;
+    font-weight: bolder;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.texto_modal { 
+    color: #2d2d2d;
+    font-weight: bolder;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-width: 280px;
+    height: 40px;
+    background-color: rgb(224, 221, 221);
+}
+
+.botao_modal {
+    color: #2d2d2d;
+    font-weight: bolder;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-width: 280px;
+    height: 40px;
+}
+
+.modal_fechar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: black;
+    background-color: rgb(211, 47, 47);
+    color: white;
+    cursor: pointer;
+    margin: 3px;
+}
+
+/* ==== modal logar ==== */
+
+form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 450px;
+    flex-direction: column;
+}
+
+form label {
+    color: #891D1D;
+    font-weight: bolder;
+    font-size: 26px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 85%;
+    min-width: 280px;
+    height: 40px;
+    background-color: rgb(224, 221, 221);
+}
+
+form input {
+    display: flex;
+    background-color: #891D1D;
+    font-size: 26px;
+    justify-content: space-around;
+    align-items: center;
+    width: 85%;
+    min-width: 280px;
+    height: 40px;
+    border: none;
+    background-color: rgb(224, 221, 221);
+}
+
+form #inputEntrar {
+    margin-top: 25px;
+    color: #f5f6fa;
+    background-color: #891D1D;
+}
+
+/* ==== modal simular ==== */
+
+.box_conteudo_proposta {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 450px;
+    flex-direction: column;
+    font-size: 40px;
+    color: #EC7000;
+}
+
+#btnPDF {
+    background-color: #69C81E;
+    color: #2d2d2d;
+}
+
+#btnRecusar {
+    background-color: #DF2F2F;
+    color: #f5f6fa;
+}

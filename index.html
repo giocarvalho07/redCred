@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>RedCred</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li>
+                <img src="img/imgLogo.png" alt="" 
+                class="imgLogo">
+                <h3 class="txtLogo">
+                    RedCred
+                </h3>
+            </li>
+            <li>
+                <a class="txtLogo" id="logar">
+                    Entrar</a>
+            </li>
+        </ul>
+    </header>
+
+    <div>
+        <button class="float boxBtnFloat">
+            <a href="https://api.whatsapp.com/send?phone=5511961985346&text=Olá,%20este%20é%20um%20texto%20que%20você%20pode%20modificar."
+            target="_blank" > 
+            <img class="phone" src="img/phone.png" alt="">
+            Fale com o atendente
+        </a>
+
+        </button>
+        
+        <div id="caixatexto" >
+            Fale conosco via whatsapp
+        </div>
+
+    </div>
+
+
+    <section>
+
+        <div class="boxEmpImg">
+            <img class="moneyImg" src="img/money.jpg" alt="">
+        </div>
+
+        <div class="boxEmpTxt">
+            <h2>
+                Empréstimo Pessoal e Consignado é com a gente mesmo!
+            </h2>
+
+            <h4>
+                Faça sua simulação abaixo.
+            </h4>
+
+            <h4>
+                Qual o valor do empréstimo?
+            </h4>
+        </div>
+
+        <div class="boxEmpBtn" >
+            <div class="boxEmpBtn2">
+                <button type="submit" id="btn300" value="300" >
+                    R$ 300,00
+                </button>
+                <button type="submit" id="btn500" value="500" >
+                    R$ 500,00
+                </button>
+                <button type="submit" id="btn1000"  value="1000">
+                    R$ 1.000,00
+                </button>
+                <button type="submit" id="btn2500" value="2500">
+                    R$ 2.500,00
+                </button>
+            </div>
+            
+            <div class="boxEmpBtn3">
+                <button type="submit" id="btn5000" value="5000">
+                    R$ 5.000,00
+                </button>
+                <button type="submit" id="btn10000" value="10000">
+                    R$ 10.000,00
+                </button>
+                <button type="submit" id="btn15000" value="15000">
+                    R$ 15.000,00
+                </button>
+                <button type="submit" id="btn20000" value="20000">
+                    R$ 20.000,00
+                </button>
+            </div>
+        </div>
+
+        <div class="boxEmpTxt">
+            <div>
+                <h4>
+                    Em quantas parcelas ?
+                </h4>
+            </div>
+
+            <div class="boxEmpBtn2">
+                <button type="submit"  id="btn3x" value="3">
+                    3x
+                </button>
+                <button type="submit" id="btn6x" value="6">
+                    6x
+                </button>
+                <button type="submit" id="btn9x" value="9">
+                    9x
+                </button>
+                <button type="submit" id="btn12x" value="12">
+                    12x
+                </button>
+            </div>
+
+            <div class="boxEmpBtn3">
+                <button type="submit" id="btn18x" value="18">
+                    18x
+                </button>
+                <button type="submit" id="btn24x" value="24">
+                    24x
+                </button>
+                <button type="submit" id="btn36x" value="36">
+                    36x
+                </button>
+                <button type="submit" id="btn48x" value="48">
+                    48x
+                </button>
+            </div>
+
+            <div>
+                <button class="button" id="calcular">
+                    Simular agora
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="modal" class="modal_container" >
+
+        <div class="modal_conteudo" id="modal_conteudo" >
+
+            <button class="modal_fechar" id="fecharModal"> X </button>
+
+            <div class="box_conteudo_proposta">
+                <p id="propostaInicial"> </p>
+
+                <p id="propostaFinal">
+                </p>
+            </div>
+
+ 
+            <div class="botao_modal">
+
+                <button id="btnPDF" onclick="criaPDF()" >
+                    Aceitar proposta
+                </button>
+
+                <button id="btnRecusar" onclick="finalizarCompra()" >
+                 Recusar proposta</a>
+                    
+                </button>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div id="entrar" class="modal_container" >
+
+        <div class="modal_conteudo" id="modal_conteudo" >
+
+            <button class="modal_fechar" id="fecharModalLogar"> X </button>
+
+            <form action="" id="formLogar" >
+                <label for="nome"> digite seu nome </label>
+                <input type="text" name="nome" id="nome">
+
+                <label for="profissao"> digite seu profissão </label>
+                <input type="text" name="profissao" id="profissao">
+
+                <label for="salario"> digite seu salário </label>
+                <input type="number" name="salario" id="salario">
+
+                <label for="idade"> digite seu idade </label>
+                <input type="date" name="idade" id="idade">
+
+                <input type="submit" name="entrar" id="inputEntrar">
+            </form>
+
+        </div>
+    </div>
+
+    <script src="evento.js"></script>
+    <script src="calculo.js"></script>
+    
+</body>
+</html>
