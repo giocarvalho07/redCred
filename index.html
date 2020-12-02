@@ -144,7 +144,7 @@
 
             <button class="modal_fechar" id="fecharModal"> X </button>
 
-            <div class="box_conteudo_proposta">
+            <div class="box_conteudo_proposta" id="box_conteudo_proposta">
                 <p id="propostaInicial"> </p>
 
                 <p id="propostaFinal">
@@ -154,7 +154,7 @@
  
             <div class="botao_modal">
 
-                <button id="btnPDF" onclick="criaPDF()" >
+                <button id="btnAceitar">
                     Aceitar proposta
                 </button>
 
@@ -176,16 +176,16 @@
 
             <form action="" id="formLogar" >
                 <label for="nome"> digite seu nome </label>
-                <input type="text" name="nome" id="nome">
+                <input type="text" name="nome" id="nome" required>
 
                 <label for="profissao"> digite seu profissão </label>
-                <input type="text" name="profissao" id="profissao">
+                <input type="text" name="profissao" id="profissao" required>
 
                 <label for="salario"> digite seu salário </label>
-                <input type="number" name="salario" id="salario">
+                <input type="number" name="salario" id="salario" required>
 
                 <label for="idade"> digite seu idade </label>
-                <input type="date" name="idade" id="idade">
+                <input type="date" name="idade" id="idade" required>
 
                 <input type="submit" name="entrar" id="inputEntrar">
             </form>

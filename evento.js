@@ -132,7 +132,13 @@ function formLogar(event) {
     event.preventDefault()
 
     var nome = document.getElementById('nome').value
-    document.getElementById('logar').innerHTML = `${nome}`
+
+    if(nome == ' '){
+        alert("Preencha os valores")
+        return;
+    } else {
+        document.getElementById('logar').innerHTML = `${nome}`
+    }
 
     var profissao = document.getElementById('profissao').value
 
@@ -158,8 +164,11 @@ function modal(modalId) {
     proposta = parseFloat(valorProposta)
     juros = parseFloat( propostaParcela + proposta)
 
+
     document.getElementById('propostaFinal').innerHTML = 
     `A proposta final é de R$ ${juros},00 em ${parcela} parcelas`
+
+
 }
 
 
@@ -174,11 +183,6 @@ function calcular(event){
     modal(modal);
 }
 document.getElementById('calcular').addEventListener('click', calcular)
-
-
-
-
-
 
 
 
@@ -204,3 +208,12 @@ function logar(event){
 document.getElementById('logar').addEventListener('click', logar)
 
 
+function aceitar(event) {
+    let modal = document.getElementById('box_conteudo_proposta').innerHTML
+    let abrirPdf = window.open('height=700,width=1200')
+    abrirPdf.document.write('<title> Proposta de crédito </title>')
+    abrirPdf.document.write(modal) 
+    abrirPdf.document.close()                                    
+    abrirPdf.print() 
+}
+document.getElementById('btnAceitar').addEventListener('click', aceitar)
